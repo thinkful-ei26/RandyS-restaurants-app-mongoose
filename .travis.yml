@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: EhiNTk96QW28TN2RCXoYmcIcSs+xOVdXJwAi36/unJeHr1XsA1cOeLt0ShW7k1o4RxGU+FZSGB+ZjQVuavYnxA6aCifRodnUTGAmZAMZRh4QQGvU0yM9ainMm7gC1YTxgEjEW5vDq5DV7OvKTkYFYGvqDv5Hr8p46/oPC9h7gla31VG2yDs/JYt2cF5cj7+ZTAFhw4X8sJpVOS1BFqGB5uOAPefcTa4+Zss56XsbPWzWoK18gisFyfKp4FbjzMaG6YFGnGweQj5qeEKW//z27Bh8Sicnb9LP28UuGJA4TAEhKxuS5peTBJeX9mjroClbvvlV10skwFuHxoAJjmCtjaw1/t0m/9CkcvCd44Cz4kXHlycLE7+rP82IDf3shrNscSIq96M36DOqCF2ocYysxgBy40/WpYibSv1+OLPA9K89LtAXHYF6DJ5GGhcL8pb2WTBH0XIkI7thA3WPkPbFHHyG/HSl94pVuHsB3FhwoXeQ9qxi5W0nBmnEO83rsWTWRRmAZJ+d/1bZGAUIDF3TPWEcPUmYs289zrfMKsmiCIUFvUnkPC+qftwwFt5sm3oAcf9ocvhQoiZhRMyCfX+ZDryhjQieI8xyiukzs4MUTUIgpcUlX/1OE5cGpd4sj2jshyjkMl/noDEA0AN4GxWIQMnsJ71FLo1sj4dFpbtZOq8=
+  app: https://dashboard.heroku.com/apps/intense-dusk-82499
+  on:
+    repo: thinkful-ei26/RandyS-restaurants-app-mongoose
+    branch: feature/with-tests
